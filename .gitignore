@@ -1,0 +1,15 @@
+/target/
+/out/
+**/*.tfstate*
+**/.terraform/
+**/.tofu/
+**/.terraform.lock.hcl
+**/.tofu.lock.hcl
+**/.DS_Store
+Cargo.lock
+*.age
+*.key
+*.pem
+.env
+.vscode/
+.idea/

@@ -1,0 +1,19 @@
+project: demo
+provider:
+  azurerm:
+    features: {}
+    subscription_id: null
+resources:
+  - cloud: azure
+    type: azurerm_resource_group
+    name: demo-rg
+    location: eastus
+  - cloud: azure
+    type: azurerm_storage_account
+    name: demostorageacct01
+    location: eastus
+    resource_group_name: demo-rg
+    account_tier: Standard
+    account_replication_type: LRS
+
+

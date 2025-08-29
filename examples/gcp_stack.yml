@@ -1,0 +1,13 @@
+project: demo
+provider:
+  google:
+    project: my-gcp-project
+    region: us-central1
+resources:
+  - cloud: gcp
+    type: google_storage_bucket
+    name: demo-bucket-123
+    location: US
+    force_destroy: true
+
+

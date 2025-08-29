@@ -1,0 +1,11 @@
+[package]
+name = "r2iac-crypto"
+version = "0.1.0"
+
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+age = { workspace = true }
+secrecy = { workspace = true }
+zeroize = { workspace = true }

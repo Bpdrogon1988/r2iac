@@ -1,0 +1,10 @@
+project: demo
+provider:
+  aws: { region: us-east-1 }
+resources:
+  - cloud: aws
+    type: aws_s3_bucket
+    name: logs
+    bucket: r2iac-demo-logs-${random_suffix}
+    force_destroy: true
+    kms_key_id: null
